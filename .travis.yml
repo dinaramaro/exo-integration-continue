@@ -9,7 +9,8 @@ deploy:
     on:
       all_branches: true
       condition: $TRAVIS_BRANCH != "master"
- - provider: script
+    
+  - provider: script
   script: bash scripts/deploy_staging_app.sh
   skip_cleanup: true
   on:
